@@ -10,3 +10,29 @@
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
+const newElement = document.createElement("div");
+document.body.append(newElement);
+const ul = document.createElement("ul");
+for (let i = 0; i < 3; i++) {
+  const li = document.createElement("li");
+  li.textContent = (i + 1).toString();
+  ul.append(li);
+}
+newElement.append(ul);
+const element = document.getElementById("main");
+element.style.height = "300px";
+element.style.backgroundColor = "#27647B";
+element.style.fontSize = "24px";
+element.style.marginLeft = "30px";
+element.style.lineHeight = 2;
+const mainElement = document.getElementById("main");
+mainElement.classList.add("new-class");
+mainElement.classList.remove("old-class");
+const mainElement = document.getElementById("main");
+mainElement.textContent = "shanice is the champion"; 
+const ul = document.getElementsByTagName("ul")[0];
+const secondChild = ul.querySelector("li:nth-child(2)");
+ul.removeChild(secondChild);
+const ul = document.getElementsByTagName("ul")[0];
+ul.remove();
+
